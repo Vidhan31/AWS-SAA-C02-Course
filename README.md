@@ -1467,9 +1467,9 @@ If you don't have access to KMS, you don't have access to the object.
 
 ### 1.4.9. S3 Object Storage Classes
 
-Picking a storage class can be done while uploading a specific object.
+[Picking a storage class can be done while uploading a specific object.
 The default is S3 standard. Once an object is uploaded to a specific class,
-it can be easily changed as long as some conditions are met.
+it can be easily changed as long as some conditions are met.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-compare)
 
 Objects in S3 are stored in a specific region.
 
