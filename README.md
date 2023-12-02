@@ -1616,25 +1616,25 @@ the source account access to the bucket.
   - If you enable replication on a bucket that already has objects, the old
   objects will not be replicated.
 - Both buckets must have versioning enabled.
-- It is a one way replication process only.
+- It is a one way replication process only. Bi-directional also but need to manually configure
 - Replication by default can handle objects that are unencrypted or SSE-S3.
   - With configuration it can handle SSE-KMS, but KMS requires more
 configuration to work.
   - It cannot replicate objects with SSE-C because AWS does not have the keys
-necessary.
+necessary. Update: It can now.
 - Source bucket owner needs permissions to objects. If you grant cross-account
 access to a bucket. It is possible the source bucket account will not own
 some of those objects.
 - Will not replicate system events, glacier, or glacier deep archive.
-- No deletes are replicated.
+- No deletes are replicated by default but can be added with DeleteMarkerReplication.
 
 #### 1.4.11.3. Why use replication
 
-SRR - Log Aggregation
+SameRegionReplication - Log Aggregation
 SRR - Sync production and test accounts
 SRR - Resilience with strict sovereignty requirements
 CRR - Global resilience improvements
-CRR - Latency reduction
+CrossRegionReplication - Latency reduction
 
 ### 1.4.12. S3 Presigned URL
 
