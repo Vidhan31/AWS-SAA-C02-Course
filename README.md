@@ -1261,7 +1261,7 @@ parties know how the data will be hidden.
   - Some features are compliant with Level 3.
   - All features are compliant with Level 2.
 
-#### 1.4.6.1. CMKs - Customer Master Keys
+#### 1.4.6.1. KMS Keys (formerly Customer Master Keys)
 
 - Managed by KMS and used within cryptographic operations.
 - AWS services, applications, and the user can all use them.
